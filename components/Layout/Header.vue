@@ -21,8 +21,8 @@
 
 <style scoped lang="scss">
 .header {
-  background: black;
   margin-top: 32px;
+  z-index: 2;
 
   &__separator {
     background: rgba(255, 255, 255, 0.1);
