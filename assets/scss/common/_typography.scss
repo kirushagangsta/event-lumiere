@@ -6,6 +6,10 @@
   font-family: "Source Serif", sans-serif;
 }
 
+.title-14-700 {
+  @include font(14px, 700, 130%);
+}
+
 .fw-400 {
   font-weight: 400;
 }
@@ -16,4 +20,12 @@
 
 .fw-700 {
   font-weight: 700;
+}
+
+.color-white {
+  color: $white-color;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
