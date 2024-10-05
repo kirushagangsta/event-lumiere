@@ -1,0 +1,62 @@
+@import "common/fonts";
+@import "common/flex";
+@import "common/text";
+@import "common/spacing";
+@import "common/borders";
+@import "common/icons";
+@import "common/typography";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Cormorant, 'sans-serif';
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  cursor: default;
+  background: $white-color;
+  color: $black-color;
+  overflow-x: hidden;
+}
+
+#__nuxt {
+  display: flex;
+  flex: 1;
+}
+
+#__layout,
+.page-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  overflow-x: hidden;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.width-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}

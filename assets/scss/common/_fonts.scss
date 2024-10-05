@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 600;
+  src: local('CormorantGaramond SemiBold'), local('CormorantGaramond-SemiBold'),
+  url('~/assets/fonts/CormorantGaramond-SemiBold.woff2') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  src: local('CormorantGaramond Bold'), local('CormorantGaramond-Bold'),
+  url('~/assets/fonts/CormorantGaramond-Bold.woff2') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('SourceSerifPro Regular'), local('SourceSerifPro-Regular'),
+  url('~/assets/fonts/SourceSerifPro-Regular.woff2') format('truetype');
+}
+
+.font-cormorant {
+  font-family: "Cormorant", sans-serif;
+}
+
+.font-serif {
+  font-family: "Source Serif", sans-serif;
+}

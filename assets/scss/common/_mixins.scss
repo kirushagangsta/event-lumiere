@@ -1,0 +1,30 @@
+// mixins here
+
+//Для шрифтов
+@mixin font($size, $weight, $line-height, $color: null) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin icon($icon) {
+  -webkit-mask: url("~/assets/svg/" + $icon + ".svg") no-repeat 50% 50%;
+  mask: url("~/assets/svg/" + $icon + ".svg") no-repeat 50% 50%;
+}
+
+@mixin up-breakpoint($point) {
+  @if $point==xl {
+    @media screen and (min-width: 1140px) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint($point) {
+  @if $point==xl {
+    @media screen and (max-width: 1140px) {
+      @content;
+    }
+  }
+}
