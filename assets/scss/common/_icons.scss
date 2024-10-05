@@ -4,3 +4,9 @@
     mask-size: cover;
     flex-shrink: 0;
 }
+.icon-basket {
+    @include icon("basket");
+    width: 30px;
+    height: 30px;
+    background: $white-color;
+}
