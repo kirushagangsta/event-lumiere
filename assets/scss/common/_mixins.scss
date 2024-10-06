@@ -60,8 +60,8 @@
     transform: translateX(0);
   }
 
-  @for $i from 1 through $images-count {
-    $vw-slide: 100/$images-count;
+  @for $i from 0 through $images-count - 1 {
+    $vw-slide: calc(100/$images-count);
     $point1: $i * ($vw-slide) + $vw-slide;
     $point2: $i * ($vw-slide) + $vw-slide * 2;
 
