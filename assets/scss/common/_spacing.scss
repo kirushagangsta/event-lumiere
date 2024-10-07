@@ -72,6 +72,10 @@ $positions: static, relative, absolute, fixed, sticky;
   margin-top: 32px;
 }
 
+.mt-96 {
+  margin-top: 96px;
+}
+
 .ml-24 {
   margin-left: 24px;
 }
@@ -114,6 +118,10 @@ $positions: static, relative, absolute, fixed, sticky;
 
 .w-200 {
   width: 200px;
+}
+
+.gap-4 {
+  gap: 4px;
 }
 
 .gap-48 {

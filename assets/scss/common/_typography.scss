@@ -6,6 +6,15 @@
   font-family: "Source Serif", sans-serif;
 }
 
+// для h2
+.title-2 {
+  @include font(40px, 700, 130%);
+}
+
+.title-20-400 {
+  @include font(20px, 400, 150%);
+}
+
 .title-14-700 {
   @include font(14px, 700, 130%);
 }
@@ -26,6 +35,14 @@
   color: $white-color;
 }
 
+.color-black {
+  color: $black-color;
+}
+
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.ls-4 {
+  letter-spacing: 4px;
 }

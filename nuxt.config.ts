@@ -4,6 +4,14 @@ export default defineNuxtConfig({
 
   css: ['~/assets/scss/main.scss'],
 
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/fawn.png' }
+      ],
+    }
+  },
+
   vite: {
     css: {
       preprocessorOptions: {
