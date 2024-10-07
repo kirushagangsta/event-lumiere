@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <div class="d-flex font-serif fw-400">
-    <MainPageValues></MainPageValues>
+  <div class="font-serif fw-400">
+    <LazyMainPageValues />
     <LazyMainPageTrackUs />
   </div>
 </template>

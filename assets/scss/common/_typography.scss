@@ -19,6 +19,14 @@
   @include font(14px, 700, 130%);
 }
 
+.title-24-600 {
+  @include font(24px, 600, 130%);
+}
+
+.title-16-400 {
+  @include font(16px, 400, 150%);
+}
+
 .fw-400 {
   font-weight: 400;
 }
