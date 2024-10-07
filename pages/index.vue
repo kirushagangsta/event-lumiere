@@ -3,7 +3,7 @@
 
 <template>
   <div class="d-flex font-serif fw-400">
-    <div>А тут сайт</div>
+    <MainPageValues></MainPageValues>
   </div>
 </template>
 
