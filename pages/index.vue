@@ -2,7 +2,8 @@
 </script>
 
 <template>
-  <div class="fw-400 w-100">
+  <div class="font-serif fw-400 w-100">
+    <LazyMainPageValues />
     <LazyMainPageForKonnerseus />
     <LazyMainPageTrackUs />
   </div>
