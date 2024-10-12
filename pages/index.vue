@@ -2,7 +2,8 @@
 </script>
 
 <template>
-  <div class="d-flex fw-400">
+  <div class="fw-400 w-100">
+    <LazyMainPageForKonnerseus />
     <LazyMainPageTrackUs />
   </div>
 </template>
