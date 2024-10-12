@@ -21,3 +21,11 @@
   src: local('SourceSerifPro Regular'), local('SourceSerifPro-Regular'),
   url('~/assets/fonts/SourceSerifPro-Regular.woff2') format('truetype');
 }
+
+@font-face {
+  font-family: 'Trajan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Trajan Regular'), local('Trajan-Regular'),
+  url('~/assets/fonts/Trajan-Regular.woff2') format('truetype');
+}

@@ -6,6 +6,10 @@
   font-family: "Source Serif", sans-serif;
 }
 
+.font-tragan {
+  font-family: "Trajan", sans-serif;
+}
+
 // для h2
 .title-2 {
   @include font(40px, 700, 130%);
