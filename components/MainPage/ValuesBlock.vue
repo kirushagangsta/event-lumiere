@@ -5,7 +5,7 @@
       src="@/assets/images/horse.webp"
       alt="horse"
     >
-    <div class="title-24-600 mt-12">
+    <div class="title-24-600 mt-12 font-tragan">
       {{ title }}
     </div>
     <div class="title-16-400 mt-12 font-tragan">

@@ -29,3 +29,11 @@
   src: local('Trajan Regular'), local('Trajan-Regular'),
   url('~/assets/fonts/Trajan-Regular.woff2') format('truetype');
 }
+
+@font-face {
+  font-family: 'Trajan';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Trajan Bold'), local('Trajan-Bold'),
+  url('~/assets/fonts/Trajan-Bold.woff2') format('truetype');
+}
