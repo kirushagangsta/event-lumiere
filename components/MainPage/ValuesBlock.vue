@@ -9,18 +9,18 @@
       {{ title }}
     </div>
     <div class="title-16-400 mt-12 font-tragan">
-     {{text}}
+      {{ text }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps({
-  title:{
+  title: {
     type: String,
     default: ""
   },
-  text:{
+  text: {
     type: String,
     default: ""
   }
