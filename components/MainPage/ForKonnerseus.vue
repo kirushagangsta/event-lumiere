@@ -1,11 +1,10 @@
 <template>
-  <div class="konnerseus w-100 d-flex justify-content-center align-items-center position-relative">
+  <div class="konnerseus w-100 d-flex justify-content-center align-items-center position-relative font-cormorant">
     <img src="@/assets/images/konnoseurs-bg.webp" alt="konnoseurs" class="w-100 h-100 position-absolute konnerseus__img"
       loading="lazy">
     <div class="position-relative text-uppercase">
       <div class="color-white title-2 ls-4">
         для конносеров
-
       </div>
       <a href="" class="d-flex justify-content-center title-14-700 mt-48">
         <div class="konnerseus__button color-black w-fit title-14-700 ls-4">
