@@ -6,6 +6,7 @@
     <LazyMainPageValues />
     <LazyMainPageForKonnerseus />
     <LazyMainPageTrackUs />
+    <LazyMainPageEventLumiere />
   </div>
 </template>
 
