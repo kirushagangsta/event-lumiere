@@ -43,12 +43,20 @@
   font-weight: 700;
 }
 
+.lh-150 {
+  line-height: 150%;
+}
+
 .color-white {
   color: $white-color;
 }
 
 .color-black {
   color: $black-color;
+}
+
+.bg-secondary {
+  background: $secondary;
 }
 
 .text-uppercase {

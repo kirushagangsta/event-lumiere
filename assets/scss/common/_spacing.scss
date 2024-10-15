@@ -42,8 +42,16 @@ $positions: static, relative, absolute, fixed, sticky;
   padding-left: 24px;
 }
 
+.pt-16 {
+  padding-top: 16px;
+}
+
 .pb-24 {
   padding-bottom: 24px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
 }
 
 .px-32 {
@@ -58,6 +66,10 @@ $positions: static, relative, absolute, fixed, sticky;
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mt-8 {
+  margin-top: 8px;
 }
 
 .mt-12 {
@@ -134,4 +146,8 @@ $positions: static, relative, absolute, fixed, sticky;
 
 .gap-48 {
   gap: 48px;
+}
+
+.gap-40 {
+  gap: 40px;
 }
