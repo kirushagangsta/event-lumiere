@@ -17,5 +17,6 @@
   left: 0;
   height: 146px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(202, 203, 207, 0) 100%);
+  z-index: 2;
 }
 </style>

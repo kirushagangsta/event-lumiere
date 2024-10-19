@@ -9,7 +9,9 @@
 .font-tragan {
   font-family: "Trajan", sans-serif;
 }
-
+.title-1 {
+  @include font(64px, 700, 130%)
+}
 // для h2
 .title-2 {
   @include font(40px, 700, 130%);
@@ -30,7 +32,9 @@
 .title-16-400 {
   @include font(16px, 400, 150%);
 }
-
+.title-30-600 {
+  @include font(30px, 600, 130%);
+}
 .fw-400 {
   font-weight: 400;
 }
