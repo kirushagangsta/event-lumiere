@@ -140,6 +140,10 @@ $positions: static, relative, absolute, fixed, sticky;
   width: 200px;
 }
 
+.h-fit {
+  height: fit-content;
+}
+
 .gap-4 {
   gap: 4px;
 }

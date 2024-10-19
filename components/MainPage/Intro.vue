@@ -1,7 +1,7 @@
 <template>
   <div class="intro d-flex justify-content-center">
     <img src="@/assets/images/intro.webp" alt="intro" class="intro__img position-absolute w-100">
-    <div class="intro-content position-relative text-center color-white font-cormorant text-uppercase width-wrapper">
+    <div class="intro-content position-relative text-center color-white font-cormorant text-uppercase width-wrapper h-fit">
       <h1 class="title-1 ls-4">
         Кто знает — тот знает
       </h1>
@@ -31,7 +31,6 @@
     margin-top: 103px;
     @include py(192px);
     background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(0, 0, 0, 0.41) 8%, rgba(0, 0, 0, 0) 70.4%);
-    height: fit-content;
 
     &__button {
       padding: 15px 48px;
