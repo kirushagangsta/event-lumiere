@@ -3,6 +3,7 @@
 
 <template>
   <div class="font-serif fw-400 w-100">
+    <MainPageIntro />
     <LazyMainPageValues />
     <LazyMainPageEventLumiere />
     <LazyMainPageForKonnerseus />
@@ -10,5 +11,4 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
