@@ -4,8 +4,8 @@
       v-for="value in values"
       :key="value.title"
       :title="value.title"
-      :text="value.text"/>
-
+      :text="value.text"
+    />
   </section>
 </template>
 
