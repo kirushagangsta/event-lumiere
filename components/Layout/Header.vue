@@ -12,7 +12,7 @@
       <div class="header-menu d-flex gap-48 color-white text-uppercase title-14-700 ls-4">
         <nuxt-link to="/">Парфюмерия</nuxt-link>
         <nuxt-link to="/">О НАС</nuxt-link>
-        <nuxt-link to="/">ИНФО</nuxt-link>
+        <nuxt-link to="/">FAQ</nuxt-link>
         <nuxt-link to="/">Контакты</nuxt-link>
       </div>
       <i class="icon icon-basket"></i>

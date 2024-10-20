@@ -17,7 +17,7 @@
       <div class="d-flex font-serif gap-40 title-16-400 mt-32">
         <nuxt-link to="/">Парфюмерия</nuxt-link>
         <nuxt-link to="/">О нас</nuxt-link>
-        <nuxt-link to="/">Инфо</nuxt-link>
+        <nuxt-link to="/">Faq</nuxt-link>
         <nuxt-link to="/">Контакты</nuxt-link>
       </div>
       <div class="title-14-700 fw-400 lh-150 mt-48">
