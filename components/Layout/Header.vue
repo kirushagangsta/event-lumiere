@@ -6,7 +6,9 @@
   <header class="width-wrapper header">
     <div class="header__separator w-100" />
     <div class="d-flex justify-content-between align-items-center mt-16 w-100">
-      <img class="header__logo" src="@/assets/svg/logo.svg" alt="logo">
+      <nuxt-link to="/">
+        <img class="header__logo" src="@/assets/svg/logo.svg" alt="logo">
+      </nuxt-link>
       <div class="header-menu d-flex gap-48 color-white text-uppercase title-14-700 ls-4">
         <nuxt-link to="/">Парфюмерия</nuxt-link>
         <nuxt-link to="/">О НАС</nuxt-link>
