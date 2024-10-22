@@ -57,8 +57,12 @@ body {
 }
 
 .width-wrapper {
-  width: 1340px;
+  width: 1140px;
   margin: 0 auto;
+
+  @include breakpoint(xl) {
+    width: 100%;
+  }
 }
 
 a {
