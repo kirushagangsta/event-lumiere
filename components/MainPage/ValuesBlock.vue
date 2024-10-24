@@ -1,14 +1,14 @@
 <template>
-  <div class="values-block text-center">
+  <div class="w-full text-center">
     <img
-      class="values-block__img"
+      class="values-block__img size-24 mx-auto"
       src="@/assets/images/horse.webp"
       alt="horse"
     >
-    <div class="title-24-600 mt-12 font-tragan">
+    <div class="title-24-600 mt-3 font-tragan">
       {{ title }}
     </div>
-    <div class="title-16-400 mt-12 font-tragan">
+    <div class="title-16-400 mt-3 font-tragan">
       {{ text }}
     </div>
   </div>
@@ -26,14 +26,3 @@ defineProps({
   }
 })
 </script>
-
-<style scoped lang="scss">
-.values-block {
-  width: 425px;
-
-  &__img {
-    height: 96px;
-    width: 96px;
-  }
-}
-</style>

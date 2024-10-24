@@ -1,31 +1,34 @@
 <template>
-  <div class="konnerseus w-100 d-flex justify-content-center position-relative font-cormorant">
+  <div class="h-[550px] w-full flex justify-center relative font-cormorant">
     <div
       v-for="slide in slides"
       :key="slide.text"
-      class="position-relative konnerseus__slide w-100 h-100"
+      class="relative shrink-0 transition-all duration-[2s] w-full h-full"
       :style="{ transform: `translateX(${-activeControl * 100 + 200}%)` }"
     >
-      <img :src="slide.image" alt="konnoseurs" class="w-100 h-100 position-absolute konnerseus__img"
+      <img :src="slide.image" alt="konnoseurs" class="w-full h-full absolute top-0 left-0 object-cover"
            loading="lazy">
-      <div class="konnerseus__radial width-wrapper h-100 position-absolute"></div>
-      <div class="konnerseus__slide-text position-relative text-uppercase text-center h-100 d-flex flex-column justify-content-center">
-        <div class="color-white title-2 ls-4">
-          {{slide.text}}
+      <div class="konnerseus__radial z-[2] left-[calc(50%-570px)] width-wrapper h-full absolute"></div>
+      <div
+        class="z-[3] relative uppercase text-center h-full flex flex-col justify-center">
+        <div class="text-white title-2 tracking-[4px]">
+          {{ slide.text }}
         </div>
-        <a href="https://t.me/eventlumiere" target="_blank" class="d-flex justify-content-center title-14-700 mt-48">
-          <div class="konnerseus__button color-black w-fit title-14-700 ls-4">
+        <a href="https://t.me/eventlumiere" target="_blank" class="flex justify-center title-14-700 mt-12">
+          <div class="px-12 py-[15px] text-black w-fit title-14-700 tracking-[4px] bg-white">
             смотреть в Telegram
           </div>
         </a>
       </div>
     </div>
-    <div class="konnerseus-controls position-absolute d-flex align-items-center">
+    <div class="bottom-[21px] gap-[10px] z-[4] absolute flex items-center">
       <div
         v-for="i in 3"
         :key="i"
-        class="konnerseus-controls__circle cursor-pointer"
-        :class="activeControl === i ? `active`:``"
+        class="size-1.5 rounded-[50%] cursor-pointer opacity-60 bg-white"
+        :class="{
+          'size-[9px] !opacity-100': activeControl === i
+        }"
         @click="setSlide(i)"
       >
       </div>
@@ -79,57 +82,12 @@ onMounted(() => {
 
 onUnmounted(() => {
   if (interval)
-  clearInterval(interval);
+    clearInterval(interval);
 });
 </script>
 
 <style lang="scss" scoped>
-.konnerseus {
-  height: 550px;
-
-  &__radial {
-    background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(0, 0, 0, 0.5) 8%, rgba(0, 0, 0, 0) 70.5%);
-    z-index: 2;
-    left: calc(50% - 670px);
-  }
-
-  &__img {
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
-
-  &__button {
-    padding: 15px 48px;
-    background-color: $white-color;
-  }
-
-  &__slide {
-    flex-shrink: 0;
-    transition: all 2s;
-
-    &-text {
-      z-index: 3;
-    }
-  }
-
-  &-controls {
-    bottom: 21px;
-    gap: 10px;
-    z-index: 4;
-
-    &__circle {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: rgba($color: $white-color, $alpha: 0.6);
-    }
-
-    &__circle.active {
-      width: 9px;
-      height: 9px;
-      background-color: $white-color;
-    }
-  }
+.konnerseus__radial {
+  background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(0, 0, 0, 0.5) 8%, rgba(0, 0, 0, 0) 70.5%);
 }
 </style>

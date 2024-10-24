@@ -9,23 +9,23 @@ const images = [track1, track2, track3, track4, track5];
 </script>
 
 <template>
-  <section class="track w-100 text-center">
-    <h2 class="text-uppercase ls-4">следите за нашим развитием</h2>
-    <div class="mt-24">
-      <a href="https://www.instagram.com/event.lumiere/" class="color-black font-serif"
+  <section class="track py-[192px] max-w-[100vw] w-full text-center">
+    <h2 class="uppercase tracking-[4px] font-bold text-2xl">следите за нашим развитием</h2>
+    <div class="mt-6">
+      <a href="https://www.instagram.com/event.lumiere/" class="text-black font-serif"
          target="_blank">@event.lumiere</a>
     </div>
-    <div class="track-carousel d-flex gap-4 mt-96 title-20-400 w-100">
+    <div class="track-carousel flex gap-1 mt-24 title-20-400 w-full">
       <div
         v-for="i in 4"
-        class="d-flex gap-4"
+        class="flex gap-1"
       >
         <div
           v-for="image in images"
           :key="image"
-          class="track-carousel__img"
+          class="size-[calc(20vw-4px)] xxl:size-[calc(10vw-4px)]"
         >
-          <img :src="image" alt="track" class="w-100 h-100" loading="lazy">
+          <img :src="image" alt="track" class="size-full" loading="lazy">
         </div>
       </div>
     </div>
@@ -34,24 +34,11 @@ const images = [track1, track2, track3, track4, track5];
 
 <style scoped lang="scss">
 .track {
-  @include py(192px);
-  max-width: 100vw;
-
   &-carousel {
     animation: slide-carousel 30s infinite;
 
     @include up-breakpoint(xxl) {
       animation: slide-carousel-xxl 60s infinite;
-    }
-
-    &__img {
-      width: calc(20vw - 4px);
-      height: calc(20vw - 4px);
-
-      @include up-breakpoint(xxl) {
-        width: calc(10vw - 4px);
-        height: calc(10vw - 4px);
-      }
     }
   }
 

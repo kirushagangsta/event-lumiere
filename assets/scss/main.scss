@@ -1,8 +1,4 @@
 @import "common/fonts";
-@import "common/flex";
-@import "common/text";
-@import "common/spacing";
-@import "common/borders";
 @import "common/icons";
 @import "common/typography";
 
@@ -52,22 +48,15 @@ body {
   overflow-x: hidden;
 }
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
 .width-wrapper {
   width: 1140px;
-  margin: 0 auto;
+  @apply mx-auto;
 
   @include breakpoint(xl) {
-    width: 100%;
+    @apply w-full;
   }
 }
 
 a {
   text-decoration: none;
-}
-.cursor-pointer {
-  cursor: pointer;
 }

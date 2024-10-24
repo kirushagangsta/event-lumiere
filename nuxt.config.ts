@@ -12,6 +12,8 @@ export default defineNuxtConfig({
     }
   },
 
+  modules: ['@nuxtjs/tailwindcss'],
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -20,6 +22,12 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+
+  tailwindcss: {
+    configPath: 'tailwind.config.ts',
+    cssPath: '@/assets/scss/tailwind.scss',
+    viewer: false
   },
 
   devtools: { enabled: false }

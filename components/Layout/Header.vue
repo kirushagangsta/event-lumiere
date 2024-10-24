@@ -3,17 +3,17 @@
 </script>
 
 <template>
-  <header class="width-wrapper header">
-    <div class="header__separator w-100" />
-    <div class="d-flex justify-content-between align-items-center mt-16 w-100">
+  <header class="width-wrapper mt-8 z-[2]">
+    <div class="w-full bg-white opacity-10 h-[1px]" />
+    <div class="flex justify-between items-center mt-4 w-full">
       <nuxt-link to="/">
-        <img class="header__logo" src="@/assets/svg/logo.svg" alt="logo">
+        <img class="h-11 w-[146px]" src="@/assets/svg/logo.svg" alt="logo">
       </nuxt-link>
-      <div class="header-menu d-flex gap-48 color-white text-uppercase title-14-700 ls-4">
-        <nuxt-link to="/">Парфюмерия</nuxt-link>
-        <nuxt-link to="/">О НАС</nuxt-link>
-        <nuxt-link to="/">FAQ</nuxt-link>
-        <nuxt-link to="/">Контакты</nuxt-link>
+      <div class="flex gap-12 text-white uppercase title-14-700 tracking-[4px]">
+        <nuxt-link class="text-white" to="/">Парфюмерия</nuxt-link>
+        <nuxt-link class="text-white" to="/">О НАС</nuxt-link>
+        <nuxt-link class="text-white" to="/">FAQ</nuxt-link>
+        <nuxt-link class="text-white" to="/">Контакты</nuxt-link>
       </div>
       <i class="icon icon-basket"></i>
     </div>
@@ -21,24 +21,4 @@
 </template>
 
 <style scoped lang="scss">
-.header {
-  margin-top: 32px;
-  z-index: 2;
-
-  &__separator {
-    background: rgba(255, 255, 255, 0.1);
-    height: 1px;
-  }
-
-  &__logo {
-    height: 44px;
-    width: 146px;
-  }
-
-  &-menu {
-    a {
-      color: $white-color;
-    }
-  }
-}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="values width-wrapper d-flex justify-content-between">
+  <section class="py-[192px] width-wrapper flex justify-between">
     <LazyMainPageValuesBlock
       v-for="value in values"
       :key="value.title"
@@ -25,10 +25,3 @@ const values = [
   }
 ]
 </script>
-
-<style scoped lang="scss">
-.values {
-  @include py(192px);
-
-}
-</style>

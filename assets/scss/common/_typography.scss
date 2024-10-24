@@ -39,39 +39,3 @@
 .title-30-600 {
   @include font(30px, 600, 130%);
 }
-
-.fw-400 {
-  font-weight: 400;
-}
-
-.fw-600 {
-  font-weight: 600;
-}
-
-.fw-700 {
-  font-weight: 700;
-}
-
-.lh-150 {
-  line-height: 150%;
-}
-
-.color-white {
-  color: $white-color;
-}
-
-.color-black {
-  color: $black-color;
-}
-
-.bg-secondary {
-  background: $secondary;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-.ls-4 {
-  letter-spacing: 4px;
-}
