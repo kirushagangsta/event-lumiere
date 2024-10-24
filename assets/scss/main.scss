@@ -13,16 +13,14 @@
 
 html,
 body {
-  height: 100%;
+  @apply h-full;
   scroll-behavior: smooth;
 }
 
 body {
-  @apply font-cormorant;
+  @apply font-cormorant flex flex-col;
   min-width: 320px;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -33,7 +31,7 @@ body {
 }
 
 #__nuxt {
-  display: flex;
+  @apply flex;
   flex: 1;
 }
 
