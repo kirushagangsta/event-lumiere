@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  font-family: Cormorant, 'sans-serif';
+  @apply font-cormorant;
   min-width: 320px;
   min-height: 100%;
   display: flex;

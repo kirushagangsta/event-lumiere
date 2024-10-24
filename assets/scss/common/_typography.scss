@@ -1,15 +1,3 @@
-.font-cormorant {
-  font-family: "Cormorant", sans-serif;
-}
-
-.font-serif {
-  font-family: "Source Serif", sans-serif;
-}
-
-.font-tragan {
-  font-family: "Trajan", sans-serif;
-}
-
 // для h1
 .title-1 {
   @include font(64px, 700, 130%)
