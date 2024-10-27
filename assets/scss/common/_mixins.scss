@@ -49,8 +49,8 @@
     @if ($px-slide) {
       $px-slide-width: calc($px-slide);
     }
-    $point1: ($i + 1) * (100 / $images-count);
-    $point2: ($i + 1) * (100 / $images-count);
+    $point1: ($i + 1) * calc((100 / $images-count));
+    $point2: ($i + 1) * calc((100 / $images-count));
 
     #{$point1}% {
       transform: translateX(calc(($i + 1) * (-#{$vw-slide-width}vw + #{$px-slide-width}px)));
