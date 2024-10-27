@@ -35,22 +35,29 @@
   }
 }
 
-@mixin carousel-animation($images-count) {
+@mixin carousel-animation($images-count, $vw-slide: null, $px-slide: null) {
   0% {
     transform: translateX(0);
   }
 
   @for $i from 0 through $images-count - 1 {
-    $vw-slide: calc(100/$images-count);
-    $point1: $i * ($vw-slide) + $vw-slide;
-    $point2: $i * ($vw-slide) + $vw-slide * 2;
+    $vw-slide-width: calc(100 / $images-count);
+    $px-slide-width: 0;
+    @if ($vw-slide) {
+      $vw-slide-width: calc($vw-slide);
+    }
+    @if ($px-slide) {
+      $px-slide-width: calc($px-slide);
+    }
+    $point1: ($i + 1) * (100 / $images-count);
+    $point2: ($i + 1) * (100 / $images-count);
 
     #{$point1}% {
-      transform: translateX(calc(($i + 1) * (-#{$vw-slide}vw)));
+      transform: translateX(calc(($i + 1) * (-#{$vw-slide-width}vw + #{$px-slide-width}px)));
     }
 
     #{$point2}% {
-      transform: translateX(calc(($i + 1) * (-#{$vw-slide}vw)));
+      transform: translateX(calc(($i + 1) * (-#{$vw-slide-width}vw + #{$px-slide-width}px)));
     }
   }
 }
