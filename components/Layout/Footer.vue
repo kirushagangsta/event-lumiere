@@ -4,23 +4,23 @@
 
 <template>
   <footer class="w-full bg-[#F8F8F3]">
-    <div class="width-wrapper flex flex-col items-center pt-4 pb-12">
+    <div class="width-wrapper flex flex-col items-center pt-4 pb-12 max-xl:px-5 max-xl:pb-6">
       <img
         class="size-24"
         src="@/assets/images/horse.webp"
         alt="horse"
       >
       <div class="w-full mt-2 h-[1px] bg-black opacity-10"/>
-      <div class="title-24-600 mt-12">
+      <div class="title-24-600 mt-12 max-xl:mt-10 max-xl:!text-[20px]">
         УЗНАТЬ БОЛЬШЕ
       </div>
-      <div class="flex font-serif gap-10 title-16-400 mt-8">
+      <div class="flex font-serif gap-10 title-16-400 mt-8 max-xl:mt-6 max-xl:!text-[14px] max-xl:w-full max-xl:justify-between">
         <nuxt-link class="text-black" to="/">Парфюмерия</nuxt-link>
         <nuxt-link class="text-black" to="/">О нас</nuxt-link>
         <nuxt-link class="text-black" to="/">FAQ</nuxt-link>
         <nuxt-link class="text-black" to="/">Контакты</nuxt-link>
       </div>
-      <div class="title-14-700 fw-400 lh-150 mt-12">
+      <div class="title-14-700 fw-400 lh-150 mt-12 max-xl:mt-10">
         ® 2024 Event Lumiere
       </div>
     </div>
