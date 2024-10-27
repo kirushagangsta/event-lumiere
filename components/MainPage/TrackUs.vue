@@ -25,7 +25,7 @@ const images = [track1, track2, track3, track4, track5];
           :key="image"
           class="size-[calc(20vw-4px)] xxl:size-[calc(10vw-4px)] max-xl:size-[calc(40vw-2px)] max-xl:-translate-x-[10vw]"
         >
-          <img :src="image" alt="track" class="size-full" loading="lazy">
+          <img :src="image" alt="track" class="size-full">
         </div>
       </div>
     </div>
