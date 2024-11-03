@@ -37,3 +37,11 @@
   src: local('Trajan Bold'), local('Trajan-Bold'),
   url('~/assets/fonts/Trajan-Bold.woff2') format('truetype');
 }
+
+@font-face {
+  font-family: 'Forum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Forum'), local('Forum'),
+  url('~/assets/fonts/Forum.woff2') format('truetype');
+}

@@ -20,6 +20,7 @@ export default <Partial<Config>> {
       trajan: ['Trajan', 'serif'],
       cormorant: ['Cormorant', 'serif'],
       serif: ['Source Serif', 'serif'],
+      forum: ['Forum', 'serif']
     }
   },
 }

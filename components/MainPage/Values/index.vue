@@ -1,5 +1,5 @@
 <template>
-  <section class="py-[192px] width-wrapper flex justify-between max-xl:flex-col max-xl:px-5 max-xl:py-20 max-xl:gap-12">
+  <section class="py-[192px] width-wrapper flex justify-between xl:gap-4 max-xl:flex-col max-xl:px-5 max-xl:py-20 max-xl:gap-12">
     <LazyMainPageValuesBlock
       v-for="value in values"
       :key="value.title"

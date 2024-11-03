@@ -12,7 +12,7 @@ const images = [track1, track2, track3, track4, track5];
   <section class="track py-[192px] max-w-[100vw] max-xl:pt-[122px] max-xl:pb-[80px] w-full text-center">
     <h2 class="uppercase font-bold text-[40px] leading-[150%] max-xl:text-[30px] font-cormorant">следите за нашим развитием</h2>
     <div class="mt-6 max-xl:mt-2">
-      <a href="https://www.instagram.com/event.lumiere/" class="text-black font-serif text-[20px] max-xl:text-[16px] leading-[150%]"
+      <a href="https://www.instagram.com/event.lumiere/" class="text-black text-[20px] max-xl:text-[16px] leading-[150%]"
          target="_blank">@event.lumiere</a>
     </div>
     <div class="track-carousel flex gap-1 mt-24 max-xl:mt-12 title-20-400 w-full">

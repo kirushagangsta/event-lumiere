@@ -14,7 +14,7 @@
       <div class="title-24-600 mt-12 max-xl:mt-10 max-xl:!text-[20px]">
         УЗНАТЬ БОЛЬШЕ
       </div>
-      <div class="flex font-serif gap-10 title-16-400 mt-8 max-xl:mt-6 max-xl:!text-[14px] max-xl:w-full max-xl:justify-between">
+      <div class="flex font-forum gap-10 title-16-400 mt-8 max-xl:mt-6 max-xl:!text-[14px] max-xl:w-full max-xl:justify-between">
         <nuxt-link class="text-black" to="/">Парфюмерия</nuxt-link>
         <nuxt-link class="text-black" to="/">О&nbsp;нас</nuxt-link>
         <nuxt-link class="text-black" to="/">FAQ</nuxt-link>

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="font-serif fw-400 w-full">
+  <div class="font-forum fw-400 w-full">
     <MainPageIntro />
     <LazyMainPageValues />
     <LazyMainPageEventLumiere />
