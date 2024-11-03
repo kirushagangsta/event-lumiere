@@ -89,13 +89,12 @@ const setSlide = (slideNumber: number) => {
   activeControl.value = slideNumber;
   if (interval) {
     clearInterval(interval);
-    interval = setInterval(slide, 700000);
+    interval = setInterval(slide, 7000);
   }
 }
 
 onMounted(() => {
-  slide();
-  interval = setInterval(slide, 700000);
+  interval = setInterval(slide, 7000);
 })
 
 onUnmounted(() => {
