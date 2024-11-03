@@ -11,11 +11,11 @@
     >
       <img :src="slide.image" alt="konnoseurs" class="w-full h-full absolute top-0 left-0 object-cover"
            loading="lazy">
-      <div class="konnerseus__radial z-[2] left-[calc(50%-570px)] width-wrapper h-full absolute"></div>
+      <div class="konnerseus__radial z-[2] xl:left-[calc(50%-570px)] width-wrapper h-full absolute"></div>
       <div
-        class="z-[3] relative uppercase text-center h-full flex flex-col justify-center">
+        class="z-[3] relative uppercase text-center h-full flex flex-col justify-center max-xl:px-5">
         <div
-          class="text-white title-2 tracking-[4px] transition-all duration-1000 delay-[0.5s]"
+          class="text-white title-2 tracking-[4px] transition-all duration-1000 delay-[0.5s] max-xl:!text-[30px]"
           :class="{
             'translate-y-[60px] opacity-0': !isVisible || activeControl !== index + 1,
           }"
@@ -30,7 +30,7 @@
             'opacity-0': !isVisible || activeControl !== index + 1
           }"
         >
-          <div class="px-12 py-[15px] text-black w-fit title-14-700 tracking-[4px] bg-white">
+          <div class="px-12 py-[15px] text-black w-fit title-14-700 tracking-[4px] bg-white max-xl:w-full">
             смотреть в Telegram
           </div>
         </a>
@@ -89,13 +89,13 @@ const setSlide = (slideNumber: number) => {
   activeControl.value = slideNumber;
   if (interval) {
     clearInterval(interval);
-    interval = setInterval(slide, 7000);
+    interval = setInterval(slide, 700000);
   }
 }
 
 onMounted(() => {
   slide();
-  interval = setInterval(slide, 7000);
+  interval = setInterval(slide, 700000);
 })
 
 onUnmounted(() => {
