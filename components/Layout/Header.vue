@@ -10,10 +10,18 @@
         <img class="h-11 w-[146px]" src="@/assets/svg/logo.svg" alt="logo">
       </nuxt-link>
       <div class="flex gap-12 text-white uppercase title-14-700 tracking-[4px]">
-        <nuxt-link class="text-white" to="/">Парфюмерия</nuxt-link>
-        <nuxt-link class="text-white" to="/">О НАС</nuxt-link>
-        <nuxt-link class="text-white" to="/">FAQ</nuxt-link>
-        <nuxt-link class="text-white" to="/">Контакты</nuxt-link>
+        <LazyUiUnderline class="py-3">
+          <nuxt-link class="text-white" to="/">Парфюмерия</nuxt-link>
+        </LazyUiUnderline>
+        <LazyUiUnderline class="py-3">
+          <nuxt-link class="text-white" to="/">О НАС</nuxt-link>
+        </LazyUiUnderline>
+        <LazyUiUnderline class="py-3">
+          <nuxt-link class="text-white" to="/">FAQ</nuxt-link>
+        </LazyUiUnderline>
+        <LazyUiUnderline class="py-3">
+          <nuxt-link class="text-white" to="/">Контакты</nuxt-link>
+        </LazyUiUnderline>
       </div>
       <i class="icon icon-basket"></i>
     </div>

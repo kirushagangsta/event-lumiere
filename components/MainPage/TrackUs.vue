@@ -10,12 +10,16 @@ const images = [track1, track2, track3, track4, track5];
 
 <template>
   <section class="track py-[192px] max-w-[100vw] max-xl:pt-[122px] max-xl:pb-[80px] w-full text-center">
-    <h2 class="uppercase font-bold text-[40px] leading-[150%] max-xl:text-[30px] font-cormorant">следите за нашим развитием</h2>
+    <h2 class="uppercase font-bold text-[40px] leading-[150%] max-xl:text-[30px] font-cormorant">следите за нашим
+      развитием</h2>
     <div class="mt-6 max-xl:mt-2">
-      <a href="https://www.instagram.com/event.lumiere/" class="text-black text-[20px] max-xl:text-[16px] leading-[150%]"
-         target="_blank">@event.lumiere</a>
+      <LazyUiUnderline class="pb-2 w-fit mx-auto">
+        <a href="https://www.instagram.com/event.lumiere/"
+           class="text-black text-[20px] max-xl:text-[16px] leading-[150%]"
+           target="_blank">@event.lumiere</a>
+      </LazyUiUnderline>
     </div>
-    <div class="track-carousel flex gap-1 mt-24 max-xl:mt-12 title-20-400 w-full">
+    <div class="track-carousel flex gap-1 mt-[88px] max-xl:mt-10 title-20-400 w-full">
       <div
         v-for="i in 4"
         class="flex gap-1"
@@ -34,6 +38,10 @@ const images = [track1, track2, track3, track4, track5];
 
 <style scoped lang="scss">
 .track {
+  .underline-hover:after {
+    border-bottom-color: black;
+  }
+
   &-carousel {
     animation: slide-carousel 30s infinite;
 
@@ -61,6 +69,5 @@ const images = [track1, track2, track3, track4, track5];
   @keyframes slide-carousel-xxl {
     @include carousel-animation(10);
   }
-
 }
 </style>
