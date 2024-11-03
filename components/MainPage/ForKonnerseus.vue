@@ -1,7 +1,10 @@
 <template>
-  <div class="h-[550px] w-full flex justify-center relative font-cormorant">
+  <div
+    v-element-visibility="onElementVisibility"
+    class="h-[550px] w-full flex justify-center relative font-cormorant"
+  >
     <div
-      v-for="slide in slides"
+      v-for="(slide, index) in slides"
       :key="slide.text"
       class="relative shrink-0 transition-all duration-[2s] w-full h-full"
       :style="{ transform: `translateX(${-activeControl * 100 + 200}%)` }"
@@ -11,10 +14,22 @@
       <div class="konnerseus__radial z-[2] left-[calc(50%-570px)] width-wrapper h-full absolute"></div>
       <div
         class="z-[3] relative uppercase text-center h-full flex flex-col justify-center">
-        <div class="text-white title-2 tracking-[4px]">
+        <div
+          class="text-white title-2 tracking-[4px] transition-all duration-1000 delay-[0.5s]"
+          :class="{
+            'translate-y-[60px] opacity-0': !isVisible || activeControl !== index + 1,
+          }"
+        >
           {{ slide.text }}
         </div>
-        <a href="https://t.me/eventlumiere" target="_blank" class="flex justify-center title-14-700 mt-12">
+        <a
+          href="https://t.me/eventlumiere"
+          target="_blank"
+          class="flex justify-center title-14-700 mt-12 transition-all duration-1000 delay-[1.5s]"
+          :class="{
+            'opacity-0': !isVisible || activeControl !== index + 1
+          }"
+        >
           <div class="px-12 py-[15px] text-black w-fit title-14-700 tracking-[4px] bg-white">
             смотреть в Telegram
           </div>
@@ -40,8 +55,11 @@
 import konnoBg1 from "@/assets/images/konnoseurs-bg-1.webp"
 import konnoBg2 from "@/assets/images/konnoseurs-bg-2.webp"
 import konnoBg3 from "@/assets/images/konnoseurs-bg-3.webp"
+import { vElementVisibility } from '@vueuse/components'
 
+const isVisible = ref(false);
 const activeControl = ref(1);
+
 const slides = [
   {
     image: konnoBg1,
@@ -84,6 +102,12 @@ onUnmounted(() => {
   if (interval)
     clearInterval(interval);
 });
+
+const onElementVisibility = () => {
+  if (!isVisible.value) {
+    isVisible.value = true;
+  }
+}
 </script>
 
 <style lang="scss" scoped>
