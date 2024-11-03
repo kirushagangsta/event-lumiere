@@ -20,7 +20,7 @@
         <nuxt-link class="text-black" to="/">FAQ</nuxt-link>
         <nuxt-link class="text-black" to="/">Контакты</nuxt-link>
       </div>
-      <div class="title-14-700 fw-400 lh-150 mt-12 max-xl:mt-10">
+      <div class="font-forum title-14-700 !font-normal lh-150 mt-12 max-xl:mt-10">
         ® 2024 Event Lumiere
       </div>
     </div>
