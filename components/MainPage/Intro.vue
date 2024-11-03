@@ -1,7 +1,7 @@
 <template>
   <div class="intro w-full h-[971px] flex justify-center max-xl:px-5 max-xl:h-[calc(100vh-67px)] max-xl:items-center">
     <img src="@/assets/images/intro.webp" alt="intro" class="h-[1117px] absolute w-full top-0 left-0 object-cover max-xl:h-screen ">
-    <div class="intro-content mt-[103px] py-[192px] relative text-center text-white font-cormorant uppercase width-wrapper h-fit max-xl:mt-0 max-xl:py-0 max-xl:h-[80vh] max-xl:flex max-xl:flex-col max-xl:justify-center">
+    <div class="intro-content mt-[103px] py-[192px] relative text-center text-white font-cormorant uppercase width-wrapper h-fit max-xl:mt-0 max-xl:py-0 max-xl:h-[90vh] max-xl:flex max-xl:flex-col max-xl:justify-center">
       <h1 class="text-animation title-1 tracking-[4px] max-xl:!text-[40px]">
         Кто знает — тот знает
       </h1>
