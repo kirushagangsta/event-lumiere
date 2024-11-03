@@ -8,7 +8,7 @@
     <div class="title-24-600 mt-3 font-cormorant">
       {{ title }}
     </div>
-    <div class="title-16-400 mt-3 font-forum max-xl:!text-[14px]">
+    <div class="title-20-400 mt-3 font-forum !leading-[125%] max-xl:!text-[14px]">
       {{ text }}
     </div>
   </div>
