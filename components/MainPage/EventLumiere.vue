@@ -12,9 +12,10 @@
           которые символизируют непринужденную элегантность.</div>
         <div class="title-16-400 mt-4 max-xl:mt-2 max-xl:!text-[14px]">В каждом аромате есть гармония и стиль, которые привнесут особый шарм в
           Вашу жизнь. Вы - свет события.</div>
-        <div
-          class="mt-10 bg-black w-fit title-14-700 uppercase tracking-[3px] cursor-pointer font-cormorant text-white px-12 py-[15px] max-xl:w-full max-xl:text-center">
-          смотреть все</div>
+        <LazyUiButton
+          text="смотреть все"
+          class="mt-10 title-14-700 uppercase tracking-[3px] max-xl:w-full max-xl:text-center font-cormorant w-fit"
+        />
       </div>
       <img src="@/assets/images/human.webp" alt="human" class="w-[632px] xl:h-[799px]  max-xl:w-full max-xl:order-0">
     </div>

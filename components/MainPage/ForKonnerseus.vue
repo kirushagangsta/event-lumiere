@@ -30,9 +30,11 @@
             'opacity-0': !isVisible || activeControl !== index + 1
           }"
         >
-          <div class="px-12 py-[15px] text-black w-fit title-14-700 tracking-[4px] bg-white max-xl:w-full">
-            смотреть в Telegram
-          </div>
+          <LazyUiButton
+            text="смотреть в Telegram"
+            class="w-fit title-14-700 tracking-[4px] max-xl:w-full"
+            theme="white"
+          />
         </a>
       </div>
     </div>

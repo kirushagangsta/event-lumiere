@@ -1,11 +1,14 @@
 <script setup lang="ts">
-
+const route = useRoute();
 </script>
 
 <template>
   <div class="page-wrapper">
-    <div class="absolute top-0 left-0 h-[146px] z-[2] top-shadow w-full max-xl:h-[75px]"></div>
-    <LayoutHeader />
+    <div
+      v-if="route.path === '/'"
+      class="absolute top-0 left-0 h-[146px] z-[2] top-shadow w-full max-xl:h-[75px]"
+    ></div>
+    <LayoutHeader :theme="route.path === '/' ? 'black' : 'white'" />
     <slot />
     <LayoutFooter />
   </div>
