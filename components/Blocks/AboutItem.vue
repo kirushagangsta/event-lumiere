@@ -59,10 +59,10 @@ const props = defineProps({
         :href="btnAction"
         target="_blank"
       >
-        <LazyUiButton class="mt-10 w-[335px] text-center font-cormorant uppercase tracking-[3px] title-14-700 px-0" :text="btnText" />
+        <LazyUiButton class="mt-10 w-[335px] max-xl:w-full text-center font-cormorant uppercase tracking-[3px] title-14-700 !px-0" :text="btnText" />
       </a>
       <nuxt-link v-else :to="btnAction">
-        <LazyUiButton class="mt-10 w-[335px] text-center font-cormorant uppercase tracking-[3px] title-14-700 px-0" :text="btnText" />
+        <LazyUiButton class="mt-10 w-[335px] max-xl:w-full text-center font-cormorant uppercase tracking-[3px] title-14-700 !px-0" :text="btnText" />
       </nuxt-link>
     </div>
     <img
