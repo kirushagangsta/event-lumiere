@@ -5,7 +5,7 @@
       <h1 class="text-animation title-1 tracking-[4px] max-xl:!text-[40px]">
         Кто знает — тот знает
       </h1>
-      <div class="text-animation title-30-600 mt-4 max-xl:!text-[20px] ">Сообщество ценителей</div>
+      <div class="text-animation title-30-600 mt-4 max-xl:!text-[20px] ">Круг ценителей</div>
       <LazyUiButton
         text="Перейти к покупкам"
         class="mt-12 mx-auto mb-0 tracking-[4px] max-xl:w-full w-fit button-animation"
