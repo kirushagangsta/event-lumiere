@@ -8,6 +8,10 @@ const props = defineProps({
   burgerOpened: {
     type: Boolean,
     default: false,
+  },
+  isFixed: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
@@ -18,10 +22,10 @@ const props = defineProps({
     :class="{ 'bg-white': theme === 'white' }"
   >
     <div
-      class="flex justify-between items-center xl:mt-4 w-full border-b-[1px] py-2.5"
+      class="flex justify-between items-center xl:mt-4 w-full border-b-[1px] py-2.5 header-border"
       :class="{
         'xl:mt-4 border-b-[rgba(255,255,255,.1)]': theme === 'black',
-        ' mb-4 border-b-[rgba(0,0,0,.05)]': theme === 'white',
+        'mb-4 border-b-[rgba(0,0,0,.05)]': theme === 'white',
       }"
     >
       <nuxt-link

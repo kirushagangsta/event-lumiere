@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BurgerMenu from "~/components/Blocks/BurgerMenu.vue";
-import { vElementVisibility } from '@vueuse/components'
+import {vElementVisibility} from '@vueuse/components'
 
 const route = useRoute();
 
@@ -33,12 +33,14 @@ const onSlotVisibility = (state: boolean) => {
       :class="[headerFixed ? 'top-0' : 'top-[-100px]']"
     >
       <LayoutHeader
+        class="fixed-header"
         theme="white"
         @show-burger="showBurger = true"
+        :is-fixed="headerFixed"
       />
     </div>
-    <slot />
-    <LayoutFooter />
+    <slot/>
+    <LayoutFooter/>
     <BurgerMenu
       v-if="showBurger"
       :burger-opened-state="showBurger"
@@ -50,5 +52,15 @@ const onSlotVisibility = (state: boolean) => {
 <style scoped lang="scss">
 .top-shadow {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(202, 203, 207, 0) 100%);
+}
+</style>
+
+<style lang="scss">
+.fixed-header {
+  .header-border {
+    border: 1px solid transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 </style>
