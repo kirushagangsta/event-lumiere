@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="fixed w-screen h-screen top-0 left-0 bg-white z-[99]">
+  <div class="fixed w-full h-full top-0 left-0 bg-white z-[99]">
     <LayoutHeader
       :burger-opened="burgerOpenedState"
       theme="white"
