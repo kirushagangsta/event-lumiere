@@ -4,14 +4,18 @@ import logo from "@/assets/svg/logo.svg"
 import logoBlack from "@/assets/svg/logo-black.svg"
 
 const props = defineProps({
-  theme: String as PropType<"black" | "white">
+  theme: String as PropType<"black" | "white">,
+  burgerOpened: {
+    type: Boolean,
+    default: false,
+  }
 })
 </script>
 
 <template>
   <header
     class="width-wrapper z-[2] max-xl:px-5"
-    :class="{ '': theme === 'black' }"
+    :class="{ 'bg-white': theme === 'white' }"
   >
     <div
       class="flex justify-between items-center xl:mt-4 w-full border-b-[1px] py-2.5"
@@ -20,7 +24,10 @@ const props = defineProps({
         ' mb-4 border-b-[rgba(0,0,0,.05)]': theme === 'white',
       }"
     >
-      <nuxt-link to="/">
+      <nuxt-link
+        to="/"
+        @click="$emit('close-burger')"
+      >
         <img class="w-[116px] h-[34px]" :src="theme === 'white' ? logoBlack : logo" alt="logo">
       </nuxt-link>
       <div class="flex gap-12 text-white uppercase title-14-700 tracking-[4px] max-xl:hidden">
@@ -43,8 +50,16 @@ const props = defineProps({
           :class="theme === 'white' ? 'bg-black' : 'bg-white'"
         ></i>
         <i
+          v-if="!burgerOpened"
           class="icon icon-burger xl:!hidden"
           :class="theme === 'white' ? 'bg-black' : 'bg-white'"
+          @click="burgerOpened ? $emit('close-burger') : $emit('show-burger')"
+        ></i>
+        <i
+          v-else
+          class="icon icon-cross xl:!hidden"
+          :class="theme === 'white' ? 'bg-black' : 'bg-white'"
+          @click="$emit('close-burger')"
         ></i>
       </div>
     </div>
