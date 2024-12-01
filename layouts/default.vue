@@ -11,8 +11,7 @@ const hideBurger = () => setTimeout(() => {
   showBurger.value = false;
 }, 50)
 
-const onSlotVisibility = (state: boolean) => {
-  console.log(state)
+const onHeaderVisibility = (state: boolean) => {
   headerFixed.value = !state;
 }
 </script>
@@ -26,7 +25,7 @@ const onSlotVisibility = (state: boolean) => {
     <LayoutHeader
       :theme="route.path === '/' ? 'black' : 'white'"
       @show-burger="showBurger = true"
-      v-element-visibility="onSlotVisibility"
+      v-element-visibility="onHeaderVisibility"
     />
     <div
       class="fixed top-0 left-0 z-10 bg-white w-full transition-all duration-1000"
@@ -58,7 +57,7 @@ const onSlotVisibility = (state: boolean) => {
 <style lang="scss">
 .fixed-header {
   .header-border {
-    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     margin-top: 0;
     margin-bottom: 0;
   }
